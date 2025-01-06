@@ -15,7 +15,7 @@ app.get('/api/2020', (request, response) => {
     try{
         Year2020.find({year:2020}).then(year => {
             console.log("These are objects from: ", year)
-            response.json(notes)
+            response.json(year)
         })
         }
     catch (error){
