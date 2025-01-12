@@ -23,4 +23,10 @@ const dataSchema = new mongoose.Schema({
     variance: Number, 
   })  
   
-  module.exports = mongoose.model('Year2020', dataSchema, 'financial_data_2020')
+// Function to dynamically create a model for a given collection
+const getYearModel = (year) => {
+  const collectionName = `financial_data_${year}`;
+  return mongoose.model(`Year${year}`, dataSchema, collectionName);
+};
+
+module.exports = { getYearModel }
