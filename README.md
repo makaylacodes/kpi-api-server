@@ -23,6 +23,8 @@ A Node.js server that connects to MongoDB and provides a RESTful API to retrieve
 
 This server retrieves KPI data (e.g., revenue, gross profit, utilization rates) stored in a MongoDB database. Each year’s data is placed in its own collection (`financial_data_2020`, `financial_data_2021`, etc.) to keep the data organized and scalable. The application can be extended or integrated with a front-end dashboard for real-time financial insights.
 
+Current server connected to MongoDB data is running here: https://kpi-api-server.onrender.com/
+
 ## Features
 
 - **Dynamic Year Collections**: Easily store and query data by year.  
