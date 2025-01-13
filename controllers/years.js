@@ -3,7 +3,7 @@ const { getYearModel } = require('../models/year')
 const router = require('express').Router()
 
 // Root homepage
-app.get('/', (request, response) => {
+router.get('/', (request, response) => {
   response.send('<h1>Hello World!</h1><h4>Please use a more specific route, like /api/year, to view specific financial data</h4>')
 })
 
